@@ -2445,9 +2445,9 @@ function getLightState(lightId){
                         
                         //update hsv to extra state:
                          //adapter.getState(`${adapter.name}.${adapter.instance}.Lights.${id}.`,
-                        var hsv_hue=adapter.getState(`${adapter.name}.${adapter.instance}.Lights.${id}.hue`).val;
-                        var hsv_sat=adapter.getState(`${adapter.name}.${adapter.instance}.Lights.${id}.sat`).val;
-                        var hsv_val=adapter.getState(`${adapter.name}.${adapter.instance}.Lights.${id}.bri`).val;
+                        var hsv_hue=adapter.getState(`${adapter.name}.${adapter.instance}.Lights.${lightId}.hue`).val;
+                        var hsv_sat=adapter.getState(`${adapter.name}.${adapter.instance}.Lights.${lightId}.sat`).val;
+                        var hsv_val=adapter.getState(`${adapter.name}.${adapter.instance}.Lights.${lightId}.bri`).val;
                         //var hsv_hue_a=(100*255/hsv_hue);
                         var hsv_sat_a=(100*255/hsv_sat);
                         var hsv_val_a=(100*255/hsv_val);
