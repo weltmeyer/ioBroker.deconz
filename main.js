@@ -2444,13 +2444,13 @@ function getLightState(lightId){
 
                         
                         //update hsv to extra state:
-                        var hsv_hue=adapter.getState(`Lights.${lightId}` + '.hue');
-                        var hsv_sat=adapter.getState(`Lights.${lightId}` + '.sat');
-                        var hsv_val=adapter.getState(`Lights.${lightId}` + '.bri');
+                        var hsv_hue=adapter.getState(`Lights.${lightId}` + '.hue').val;
+                        var hsv_sat=adapter.getState(`Lights.${lightId}` + '.sat').val;
+                        var hsv_val=adapter.getState(`Lights.${lightId}` + '.bri').val;
                         //var hsv_hue_a=(100*255/hsv_hue);
                         var hsv_sat_a=(100*255/hsv_sat);
                         var hsv_val_a=(100*255/hsv_val);
-                        adapter.log.debug('getAllGroups: ' + JSON.stringify([hsv_hue,hsv_sat,hsv_val,hsv_sat_a,hsv_vala]));
+                        adapter.log.debug('getAllGroups: ' + JSON.stringify([hsv_hue,hsv_sat,hsv_val,hsv_sat_a,hsv_val_a]));
                         //end update hsv
                         
                         
